@@ -8,9 +8,9 @@ const UserSchema = Yup.object().shape({
     .min(3, "Too Short!")
     .max(50, "Too Long!")
     .required("Required"),
-  number: Yup.number()
-    .min(3, "Too short")
-    .max(50, "Too long")
+  number: Yup.string()
+    .min(3, "Too Short!")
+    .max(50, "Too Long!")
     .required("Required"),
 });
 
@@ -35,7 +35,7 @@ export default function ContactForm({ onAdd }) {
       onSubmit={handleSubmit}
       validationSchema={UserSchema}
     >
-      {({ handleSubmit }) => (
+      {({ handleSubmit, errors, touched }) => (
         <Form className={css.form} onSubmit={handleSubmit}>
           <div className={css.container}>
             <label className={css.label}>Name</label>
