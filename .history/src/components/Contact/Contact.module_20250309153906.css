@@ -1,0 +1,59 @@
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+
+    border-radius: 8px;
+
+
+}
+
+
+
+/* Контейнер для имени и номера */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* Центрирует текст относительно кнопки */
+    gap: 4px;
+}
+
+/* Контейнер для текста и иконки */
+.text {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    /* Выровнять иконку по центру */
+    gap: 8px;
+}
+
+/* Иконки выравниваются по центру */
+.icon {
+    color: #333;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+}
+
+/* Кнопка Delete */
+.button {
+    padding: 6px 12px;
+    background-color: #ff4d4d;
+    border: none;
+    color: white;
+
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.button:hover {
+    background-color: #cc0000;
+    transform: scale(1.05);
+}

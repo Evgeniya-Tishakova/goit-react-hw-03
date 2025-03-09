@@ -1,0 +1,89 @@
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+
+    border-radius: 8px;
+
+
+}
+
+
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    margin-top: 20px;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+.item {
+    flex: 1 1 calc(33.333% - 10px);
+    /* По 3 контакта в ряд */
+    max-width: 250px;
+    min-width: 200px;
+}
+
+📌 Contact.module.css css Копировать Редактировать .contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.contact:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.02);
+}
+
+/* Контейнер для имени и номера */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* Контейнер для текста и иконки */
+.text {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Иконки */
+.icon {
+    color: #333;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+}
+
+/* Кнопка Delete */
+.button {
+    padding: 4px 10px;
+    background-color: #d9534f;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.button:hover {
+    background-color: #c9302c;
+    transform: scale(1.05);
+}
