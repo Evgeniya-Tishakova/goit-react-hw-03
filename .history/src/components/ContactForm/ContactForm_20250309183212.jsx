@@ -33,7 +33,7 @@ export default function ContactForm({ onAdd }) {
     <Formik
       initialValues={initialValues}
       onSubmit={handleSubmit}
-      validationSchema={UserSchema}
+      validation={UserSchema}
     >
       {({ handleSubmit }) => (
         <Form className={css.form} onSubmit={handleSubmit}>
